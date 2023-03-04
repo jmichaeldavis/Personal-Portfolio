@@ -131,7 +131,7 @@ main {
 }
 
 aside {
-    height: 800px;
+    height: 1000px;
     margin-top: 200px;
     background-color: gray;
     color: white;
@@ -139,19 +139,23 @@ aside {
 
 aside h1 {
     text-align: center;
-    margin: 100 px;
+    margin: 200 px;
     letter-spacing: 5px;
     color:white;
-    padding-top: 1em;
+    padding-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .image-container {
     height: 300px;
-    width: 200px;
+    width: 250px;
+    margin-top: 500px;
 }
 
 .personal-image {
     height: 300px;
-    width: 200px;
+    width: 250px;
     object-fit: cover;
 }
