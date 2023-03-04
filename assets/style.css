@@ -2,6 +2,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+    max-height:100%;
+    max-width:100%;
+}
 header * {
    padding: 0;
    margin: 0;
@@ -18,19 +22,22 @@ h6 {
     letter-spacing: 7.5px;
 }
 
+nav {
+    margin-bottom: 20px;
+}
+
 ul {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-content: center;
     height: 40px;
     text-align: center;
     list-style: none;
-
+    flex-wrap: wrap;
 }
 
 .navbar-items {
-    flex: 0 1 auto;
-    text-decoration: none;
+    flex: 0 0 10rem;
     color: gray;
     font-weight: bolder;
     background-color: white;
@@ -39,6 +46,9 @@ ul {
     width: 8%;
     margin: auto;
     border: solid gray; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .navbar-items:hover {
@@ -51,9 +61,82 @@ ul {
 
 main {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .portfolio-piece {
     flex-wrap: wrap; 
     image-rendering: optimizeSpeed;
+    flex: 0 1 auto;
+    width: 500px;
+    height: 300px;
+    margin: 5px;
+    border-radius: 30px; 
+    overflow: hidden; 
+    background-color: aqua; 
+}
+
+#project-1 {
+    background-image: url("./pb1.jpg")
+}
+
+#project-2 {
+    background-image: url("./pb2.jpg")
+}
+
+#project-3 {
+    background-image: url("./pb3.jpg")
+}
+
+#project-4 {
+    background-image: url("./pb4.jpg")
+}
+
+#project-5 {
+    background-image: url("./pb5.jpg")
+}
+
+.portfolio-piece img {
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    filter: brightness(130%);
+}
+
+.portfolio-piece h3 {
+    /* position: absolute; */
+    z-index: 1;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    align-content: center;
+    padding-left: 5em;
+    padding-top: 2em;
+}
+
+aside {
+    height: 800px;
+    margin-top: 200px;
+    background-color: gray;
+    color: white;
+}
+
+aside h1 {
+    text-align: center;
+    margin: 100 px;
+    letter-spacing: 5px;
+    color:white;
+    padding-top: 1em;
+}
+
+.image-container {
+    height: 300px;
+    width: 200px;
+}
+
+.personal-image {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
 }
