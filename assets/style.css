@@ -67,34 +67,19 @@ main {
 
 .portfolio-piece {
     flex-wrap: wrap; 
-    image-rendering: optimizeSpeed;
     flex: 0 1 auto;
     width: 500px;
     height: 300px;
     margin: 5px;
     border-radius: 30px; 
-    overflow: hidden; 
-    background-color: aqua; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#project-1 {
-    background-image: url("./pb1.jpg")
-}
-
-#project-2 {
-    background-image: url("./pb2.jpg")
-}
-
-#project-3 {
-    background-image: url("./pb3.jpg")
-}
-
-#project-4 {
-    background-image: url("./pb4.jpg")
-}
-
-#project-5 {
-    background-image: url("./pb5.jpg")
+.portfolio-piece:hover {
+    box-shadow: 0 0 0.5em gray;
+    cursor: pointer;
 }
 
 .portfolio-piece img {
@@ -105,14 +90,44 @@ main {
 }
 
 .portfolio-piece h3 {
-    /* position: absolute; */
-    z-index: 1;
-    margin: auto;
     color: white;
     font-weight: bolder;
-    align-content: center;
-    padding-left: 5em;
-    padding-top: 2em;
+    font-size: xx-large;
+}
+
+#project-1 {
+    background-image: url("./pb1.jpg");
+    background-position: center;
+    background-size: cover;
+    image-rendering: optimizeSpeed;
+}
+
+#project-2 {
+    background-image: url("./pb2.jpg");
+    background-position: center;
+    background-size: cover;
+    image-rendering: optimizeSpeed;
+}
+
+#project-3 {
+    background-image: url("./pb3.jpg");
+    background-position: center;
+    background-size: cover;
+    image-rendering: optimizeSpeed;
+}
+
+#project-4 {
+    background-image: url("./pb4.jpg");
+    background-position: center;
+    background-size: cover;
+    image-rendering: optimizeSpeed;
+}
+
+#project-5 {
+    background-image: url("./pb5.jpg");
+    background-position: center;
+    background-size: cover;
+    image-rendering: optimizeSpeed;
 }
 
 aside {
