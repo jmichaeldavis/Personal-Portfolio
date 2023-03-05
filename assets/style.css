@@ -17,20 +17,20 @@ header * {
    text-align: center;
 }
 
-#profile-pic {
-    border-radius: 30px;
-    border: solid gray;
+#profile-container {
     position: absolute;
-    left: 2%;
-    top: 2%;
-    width: 100px;
+    left: 1%;
+    top: 1%;
+    width: 150px;
+    height: 150px;
+    filter:brightness(130%)
 }
 
 #my-picture {
-    object-fit: cover;
-    height: 100px;
-    width: auto;
-    image-rendering: optimizeSpeed;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: solid gray;
 }
 
 h1 {
@@ -105,13 +105,6 @@ main {
     cursor: pointer;
 }
 
-.portfolio-piece img {
-    object-fit: cover;
-    width: 500px;
-    height: 500px;
-    filter: brightness(130%);
-}
-
 .portfolio-piece h3 {
     font-weight: bolder;
     font-size: xx-large;
@@ -182,12 +175,45 @@ aside h1 {
 
 .image-container {
     height: 300px;
-    width: 250px;
     margin-top: 500px;
 }
 
 .personal-image {
     height: 300px;
-    width: 250px;
+    width: auto;
     object-fit: cover;
+    border-radius: 10%;
+}
+
+#description-container {
+    display: flex;
+    justify-content: center;
+}
+
+#description {
+    margin-top: 5%;
+    width: 75%;
+    text-align: justify;
+}
+
+strong {
+    font-weight: bolder
+}
+
+footer {
+    height: 1000px;
+    margin-top: 200px;
+    color: gray;
+}
+
+footer h1 {
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: x-large;
+    flex-direction: column;
 }
