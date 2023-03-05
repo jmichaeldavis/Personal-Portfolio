@@ -5,39 +5,47 @@
   <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-  <header>
+  <header id="home">
     <h1>Joshua Davis</h1>
     <h6>Project Portfolio</h6>
   </header>
+  <div id="profile-pic">
+    <img id="my-picture" href="./assets/profile-pic.jpg" alt="profile picture of Joshua Davis">
+  </div>
   <nav>
 <!-- nav bar will be a relative-positioned flexbox -->
     <ul>
-        <li class="navbar-items" id="nav-home">Home</li>
-        <li class="navbar-items" id="nav-projects">Projects</li>
-        <li class="navbar-items" id="nav-about">About Me</li>
-        <li class="navbar-items" id="nav-contact">Contact</li>
+        <!-- <li class="navbar-items" id="nav-home"><a href="#home"></a>Home</li> -->
+        <li class="navbar-items" id="nav-projects" onclick="location.href='#project-1'">Projects</li>
+        <li class="navbar-items" id="nav-about" onclick="location.href='#about-me'">About Me</li>
+        <li class="navbar-items" id="nav-contact" onclick="location.href='#contact-me'">Contact</li>
       </ul>
   </nav>
   <main>
     <!-- maybe each project can be a link to the deployed site it will display as just a title and image -->
-    <section id="project-1" class="portfolio-piece">
+    <section id="project-1" class="portfolio-piece" onclick="window.open('https://jmichaeldavis.github.io/hw1/')">
       <h3>Project 1</h3>
+      <p>Horiseon: Website Accesibility</p>
     </section>
     <section id="project-2" class="portfolio-piece">
       <h3>Project 2</h3>
+      <p>Coming Soon</p>
     </section>
     <section id="project-3" class="portfolio-piece">
       <h3>Project 3</h3>
+      <p>Coming Soon</p>
     </section>
     <section id="project-4" class="portfolio-piece">
       <h3>Project 4</h3>
+      <p>Coming Soon</p>
     </section>
     <section id="project-5" class="portfolio-piece">
       <h3>Project 5</h3>
+      <p>Coming Soon</p>
     </section>
   </main>  
   <aside>
-    <h1>About Me</h1>
+    <h1 id="about-me">About Me</h1>
     <!-- I can have a section that shows a picture of me, a short paragraph, and maybe a third thing -->
     <section>
       <ul>
@@ -59,7 +67,7 @@
       </ul>
     </section>
   </aside>
-  <footer id="contact">
+  <footer id="contact-me">
     <!-- I can have links to linkedin, my email, and maybe social media  -->
     <h5>Contact Me</h5>
     <section id="contact-links">

@@ -6,19 +6,40 @@ img {
     max-height:100%;
     max-width:100%;
 }
+
+header {
+    margin: 25px;
+}
+
 header * {
    padding: 0;
    margin: 0;
    text-align: center;
 }
 
+#profile-pic {
+    border-radius: 30px;
+    border: solid gray;
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    width: 100px;
+}
+
+#my-picture {
+    object-fit: cover;
+    height: 100px;
+    width: auto;
+    image-rendering: optimizeSpeed;
+}
+
 h1 {
    font-size: xx-large;
-   color: rgb(169, 169, 169);
+   color: gray;
 }
 
 h6 {
-    color:lightgray;
+    color:gray;
     letter-spacing: 7.5px;
 }
 
@@ -75,6 +96,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    flex-direction: column;
 }
 
 .portfolio-piece:hover {
@@ -90,9 +113,13 @@ main {
 }
 
 .portfolio-piece h3 {
-    color: white;
     font-weight: bolder;
     font-size: xx-large;
+}
+
+.portfolio-piece p {
+    font-weight: bold;
+    font-size: larger;
 }
 
 #project-1 {
@@ -100,6 +127,7 @@ main {
     background-position: center;
     background-size: cover;
     image-rendering: optimizeSpeed;
+    width: 700px;
 }
 
 #project-2 {
@@ -107,6 +135,7 @@ main {
     background-position: center;
     background-size: cover;
     image-rendering: optimizeSpeed;
+    opacity: 50%;
 }
 
 #project-3 {
@@ -114,6 +143,7 @@ main {
     background-position: center;
     background-size: cover;
     image-rendering: optimizeSpeed;
+    opacity: 50%;
 }
 
 #project-4 {
@@ -121,6 +151,7 @@ main {
     background-position: center;
     background-size: cover;
     image-rendering: optimizeSpeed;
+    opacity: 50%;
 }
 
 #project-5 {
@@ -128,6 +159,7 @@ main {
     background-position: center;
     background-size: cover;
     image-rendering: optimizeSpeed;
+    opacity: 50%;
 }
 
 aside {
