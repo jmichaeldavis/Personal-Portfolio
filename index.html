@@ -10,12 +10,9 @@
     <h1>Joshua Davis</h1>
     <h6>Project Portfolio</h6>
   </header>
-  <div id="profile-container">
-    <img id="my-picture" src="./assets/profilepic.jpg" alt="profile picture of Joshua Davis">
-  </div>
   <nav>
 <!-- nav bar will be a relative-positioned flexbox -->
-    <ul>
+    <ul class="navbar">
         <!-- <li class="navbar-items" id="nav-home"><a href="#home"></a>Home</li> -->
         <li class="navbar-items" id="nav-projects" onclick="location.href='#project-1'">Projects</li>
         <li class="navbar-items" id="nav-about" onclick="location.href='#about-me'">About Me</li>
@@ -48,8 +45,8 @@
   <aside>
     <h1 id="about-me">About Me</h1>
     <!-- I can have a section that shows a picture of me, a short paragraph, and maybe a third thing -->
-    <section>
-      <ul>
+    <section class="images-about-me">
+      <ul class="about-me-container">
         <li class="image-container">
           <img src="assets/carly-and-me.jpg" class="personal-image">
         </li>
@@ -59,13 +56,11 @@
         <li class="image-container">
           <img src="assets/mac.jpg" class="personal-image">
         </li>
-        <li id="description-container">
-          <p id="description">My name is Joshua Davis. I am 24 years old and live in Spanish Fork, 
-          Utah with my wife and two dogs. I am currently a student in the University of Utah Full Stack Boot Camp. 
-          I am excited to grow in my knowledge of web development and am eager to begin my career in this industry. 
+      </ul>  
+      <p id="description">My name is Joshua Davis. I am 24 years old and live in Spanish Fork, 
+        Utah with my wife and two dogs. I am currently a student in the University of Utah Full Stack Boot Camp. 
+        I am excited to grow in my knowledge of web development and am eager to begin my career in this industry. 
         <strong>Welcome to my portfolio.</strong></p>
-        </li>
-      </ul>
     </section>
   </aside>
   <footer id="contact-me">
