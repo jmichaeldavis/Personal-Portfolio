@@ -6,7 +6,7 @@ img {
     max-height:100%;
     max-width:100%;
 }
-
+/* Header Section */
 header {
     margin: 25px;
 }
@@ -42,7 +42,7 @@ h6 {
     color:gray;
     letter-spacing: 7.5px;
 }
-
+/* Navigation Bar Section */
 nav {
     margin-bottom: 20px;
 }
@@ -79,7 +79,7 @@ ul {
     font-size: larger;
     cursor: pointer;
 }
-
+/* Project Section */
 main {
     display: flex;
     justify-content: center;
@@ -154,7 +154,7 @@ main {
     image-rendering: optimizeSpeed;
     opacity: 50%;
 }
-
+/* About Me Section */
 aside {
     height: 1000px;
     margin-top: 200px;
@@ -205,7 +205,7 @@ footer {
     margin-top: 200px;
     color: gray;
 }
-
+/* Footer Area */
 footer h1 {
     text-align: center;
 }
