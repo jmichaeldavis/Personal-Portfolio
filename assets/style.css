@@ -112,7 +112,7 @@ main {
     background-position: center;
     background-size: cover;
     image-rendering: optimizeSpeed;
-    opacity: 50%;
+    width: 700px;
 }
 
 #project-3 {
