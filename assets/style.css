@@ -99,12 +99,15 @@ main {
     font-size: larger;
 }
 
+.ready-project {
+    width: 700px;
+}
+
 #project-1 {
     background-image: url("./pb1.jpg");
     background-position: center;
     background-size: cover;
     image-rendering: optimizeSpeed;
-    width: 700px;
 }
 
 #project-2 {
@@ -112,7 +115,6 @@ main {
     background-position: center;
     background-size: cover;
     image-rendering: optimizeSpeed;
-    width: 700px;
 }
 
 #project-3 {
